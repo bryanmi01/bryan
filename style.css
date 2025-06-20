@@ -177,3 +177,29 @@ blockquote {
     max-width: 100%;
   }
 }
+
+.depoimentos:hover::after {
+  content: attr(data-balao);
+  position: absolute;
+  top: -60px;
+  left: 0;
+  background-color: #fff3cd;
+  color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #f0c36d;
+  width: 250px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+  z-index: 10;
+}
+
+.depoimentos:hover::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #fff3cd transparent;
+}
