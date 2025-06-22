@@ -1,97 +1,91 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projeto Agrinho</title>
+  <title>Raízes e Conexões</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
   <header>
-    <h1>🌱 Projeto Agrinho</h1>
-    <p>Festejando a conexão entre campo e cidade!</p>
+    <h1>🌾 Raízes e Conexões</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+    <nav id="menu">
+      <ul>
+        <li><a href="#inicio">🏠 Início</a></li>
+        <li><a href="#mapa">🗺️ Mapa do Brasil</a></li>
+        <li><a href="#historias">👩‍🌾 Histórias de Gente</a></li>
+        <li><a href="#receitas">🍲 Receitas</a></li>
+        <li><a href="#eventos">🎉 Eventos</a></li>
+        <li><a href="#educativa">📚 Área Educativa</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="introducao">
-    <h2>Bem-vindos!</h2>
-    <p>Este espaço celebra a educação alegre e transformadora promovida pelo Programa Agrinho no Paraná, conectando o
-      campo e a cidade com muita criatividade!</p>
-  </section>
+  <main>
+    <section id="inicio">
+      <h2>Bem-vindo ao projeto!</h2>
+      <p>Explore as conexões entre o campo e a cidade através de histórias, receitas e tradições, com visual criado por
+        Inteligência Artificial.</p>
+    </section>
 
-  <section id="sobre">
-    <h2>Sobre o Agrinho</h2>
-    <p>Há 30 anos, o Agrinho vem desempenhando um papel fundamental na formação de crianças e adolescentes em todo o
-      Paraná. Muito mais do que um programa educacional, ele é um movimento que transforma vidas e desperta
-      consciências. Ao levar para as escolas temas essenciais como cidadania, meio ambiente, ética, saúde,
-      inclusão e responsabilidade social, o Agrinho estimula o pensamento crítico, o respeito ao próximo e o
-      cuidado com o planeta.
+    <section id="mapa">
+      <h2>Mapa do Brasil</h2>
+      <p>Veja os produtos típicos de cada região rural e seu impacto na vida urbana.</p>
+      <img src="mapa_exemplo.png" alt="Mapa dos Produtos do Campo" />
+    </section>
 
-      Com uma abordagem alegre, criativa e inovadora, o programa conecta o aprendizado à realidade dos alunos,
-      valorizando o conhecimento que nasce da experiência, da empatia e da colaboração. Professores se tornam
-      multiplicadores dessa transformação, e os estudantes passam a enxergar seu papel no mundo com mais clareza e
-      entusiasmo.
+    <section id="historias">
+      <h2>Histórias de Gente</h2>
+      <p>Depoimentos de produtores rurais como criadores de carneiro, produtores de morango e tomate. Conectando
+        realidades do campo com a cidade.</p>
+      <a href="historia.html" class="btn-saiba-mais">Saiba Mais</a>
+    </section>
 
-      Ao longo dessas três décadas, o Agrinho já alcançou milhões de alunos e educadores, fortalecendo valores
-      fundamentais para a construção de uma sociedade mais justa, consciente e sustentável. O legado que vem sendo
-      construído é motivo de orgulho e inspiração, provando que, com educação de qualidade e propósito, é possível
-      transformar o presente e semear um futuro melhor para todos.</p>
-  </section>
 
-  <section id="galeria">
-    <h2>Galeria de Imagens</h2>
-    <div class="imagens">
-      <a href="#img1">
-        <img src="https://www.cnabrasil.org.br/storage/arquivos/Agrinho2023.jpeg"
-          alt="Estudantes do campo e da cidade juntos" />
-      </a>
-      <a href="#img2">
-        <img src="https://www.aen.pr.gov.br/sites/default/arquivos_restritos/files/imagem/2025-03/dsc03427.jpg"
-          alt="Atividades escolares do Agrinho" />
-      </a>
-      <a href="#img3">
-        <img src="https://www.sistemafaep.org.br/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-04-at-09.12.03-1.jpeg"
-          alt="Crianças celebrando a educação" />
-      </a>
-    </div>
-  </section>
+    <section id="receitas">
+      <h2>Receitas do Campo</h2>
+      <p>Conheça receitas tradicionais de origem rural que fazem parte da vida urbana.</p>
+    </section>
 
-  <section id="depoimentos">
-    <h2>O que dizem...</h2>
-    <blockquote class="destacado">
-      "Aprendi muitas coisas sobre o campo! Descobri de onde vêm os alimentos que a gente come, como as
-      pessoas que vivem lá trabalham bastante para cuidar da terra e dos animais, e percebi como tudo isso é
-      importante para o nosso dia a dia. Agora valorizo muito mais o campo e quem vive nele!" – Ana, 10 anos
-    </blockquote>
-    <blockquote class="destacado">
-      "O Agrinho me ensinou que cuidar da natureza pode ser divertido! Aprendi que pequenas atitudes, como
-      não jogar lixo no chão e respeitar os animais e as plantas, fazem uma grande diferença. Agora vejo como é
-      importante proteger o meio ambiente com alegria e responsabilidade." – Lucas, 12 anos
-    </blockquote>
-  </section>
+    <section id="eventos">
+      <h2>Eventos e Feiras</h2>
+      <p>Calendário com festas típicas, encontros e feiras nas regiões próximas a Curitiba.</p>
+    </section>
 
-  <!-- ZOOM nas imagens (fora das seções!) -->
-  <div class="zoom" id="img1">
-    <a href="#" class="fechar">×</a>
-    <img src="https://www.cnabrasil.org.br/storage/arquivos/Agrinho2023.jpeg"
-      alt="Estudantes do campo e da cidade juntos em destaque" />
-  </div>
+    <section id="educativa">
+      <h2>Área Educativa</h2>
+      <p>Infográficos sobre sustentabilidade e agricultura familiar, além de quizzes interativos para todos os públicos!
+      </p>
+    </section>
+  </main>
 
-  <div class="zoom" id="img2">
-    <a href="#" class="fechar">×</a>
-    <img src="https://www.aen.pr.gov.br/sites/default/arquivos_restritos/files/imagem/2025-03/dsc03427.jpg"
-      alt="Atividades escolares do Agrinho em destaque" />
-  </div>
+  <footer>
+    <p>🌿 Projeto desenvolvido com HTML + CSS | Hospedado no GitHub Pages</p>
+  </footer>
 
-  <div class="zoom" id="img3">
-    <a href="#" class="fechar">×</a>
-    <img src="https://www.sistemafaep.org.br/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-04-at-09.12.03-1.jpeg"
-      alt="Crianças celebrando a educação em destaque" />
-  </div>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('show');
+    }
 
+    // Animação bounce ao clicar nos links do menu
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href').replace('#', '');
+        const target = document.getElementById(targetId);
+
+        if (target) {
+          target.classList.remove('bounce');
+          void target.offsetWidth; // força reflow
+          target.classList.add('bounce');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
