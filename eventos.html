@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eventos e Feiras – Raízes e Conexões</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌾 Raízes e Conexões</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+    <nav id="menu">
+      <ul>
+        <li><a href="teste.html">🏠 Página Inicial</a></li>
+        <li><a href="#eventos">🎉 Eventos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="eventos">
+      <h2>Eventos e Feiras</h2>
+      <p>Calendário com festas típicas, encontros e feiras nas regiões próximas a Curitiba.</p>
+
+      <div class="evento">
+        <h3>🎊 Festa da Colheita – Colombo</h3>
+        <p>Comidas típicas, danças regionais e exposição de produtos agrícolas da região metropolitana.</p>
+      </div>
+
+      <div class="evento">
+        <h3>🚜 Feira da Agricultura Familiar – Lapa</h3>
+        <p>Feira mensal com venda direta de hortaliças, queijos, pães e artesanatos produzidos por pequenos agricultores.</p>
+      </div>
+
+      <div class="evento">
+        <h3>🎶 Festival do Milho – Campo Largo</h3>
+        <p>Um evento divertido com música ao vivo, concursos culinários e pratos feitos à base de milho.</p>
+      </div>
+
+      <a href="teste.html" class="voltar">← Voltar à Página Inicial</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌿 Projeto desenvolvido com HTML + CSS | Hospedado no GitHub Pages</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('show');
+    }
+
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href').replace('#', '');
+        const target = document.getElementById(targetId);
+
+        if (target) {
+          target.classList.remove('bounce');
+          void target.offsetWidth;
+          target.classList.add('bounce');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

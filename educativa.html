@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Área Educativa – Raízes e Conexões</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Estilos básicos para os quizzes */
+    .quiz-container {
+      margin-top: 30px;
+      padding: 15px;
+      border: 2px solid #4CAF50;
+      border-radius: 8px;
+      background-color: #e8f5e9;
+      max-width: 600px;
+    }
+    .quiz-container h4 {
+      margin-bottom: 10px;
+    }
+    .quiz-question {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .quiz-options label {
+      display: block;
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+    .quiz-feedback {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    button.check-btn {
+      margin-top: 12px;
+      padding: 6px 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button.check-btn:hover {
+      background-color: #388E3C;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌾 Raízes e Conexões</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+    <nav id="menu">
+      <ul>
+        <li><a href="teste.html">🏠 Página Inicial</a></li>
+        <li><a href="#educativa">📚 Área Educativa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="educativa">
+      <h2>Área Educativa</h2>
+      <p>Infográficos sobre sustentabilidade e agricultura familiar, além de quizzes interativos para todos os públicos!</p>
+
+      <div class="educativo">
+        <h3>🌱 Sustentabilidade no Campo</h3>
+        <p>Infográfico mostrando práticas sustentáveis adotadas por pequenos produtores no Brasil.</p>
+      </div>
+
+      <div class="educativo">
+        <h3>👨‍👩‍👧‍👦 Agricultura Familiar</h3>
+        <p>Conheça a importância da agricultura familiar para o abastecimento alimentar e o meio ambiente.</p>
+      </div>
+
+      <div class="educativo">
+        <h3>🧠 Quiz Interativo</h3>
+        <p>Teste seus conhecimentos sobre o campo e seus impactos na vida urbana de forma divertida e educativa.</p>
+      </div>
+
+      <!-- Seção de quizzes -->
+      <div class="quiz-container" id="quiz1">
+        <h4>Quiz 1: Sustentabilidade</h4>
+        <div class="quiz-question">Qual destas práticas é considerada sustentável no campo?</div>
+        <div class="quiz-options">
+          <label><input type="radio" name="q1" value="0" /> Uso intensivo de agrotóxicos</label>
+          <label><input type="radio" name="q1" value="1" /> Rotação de culturas</label>
+          <label><input type="radio" name="q1" value="0" /> Desmatamento para plantio</label>
+          <label><input type="radio" name="q1" value="0" /> Monocultura contínua</label>
+        </div>
+        <button class="check-btn" onclick="checkAnswer('q1', 'quiz1-feedback')">Verificar</button>
+        <div class="quiz-feedback" id="quiz1-feedback"></div>
+      </div>
+
+      <div class="quiz-container" id="quiz2">
+        <h4>Quiz 2: Agricultura Familiar</h4>
+        <div class="quiz-question">A agricultura familiar é importante porque:</div>
+        <div class="quiz-options">
+          <label><input type="radio" name="q2" value="1" /> Garante o abastecimento local de alimentos</label>
+          <label><input type="radio" name="q2" value="0" /> Usa grandes máquinas para plantar</label>
+          <label><input type="radio" name="q2" value="0" /> Depende apenas de exportações</label>
+          <label><input type="radio" name="q2" value="0" /> Não respeita o meio ambiente</label>
+        </div>
+        <button class="check-btn" onclick="checkAnswer('q2', 'quiz2-feedback')">Verificar</button>
+        <div class="quiz-feedback" id="quiz2-feedback"></div>
+      </div>
+
+      <a href="teste.html" class="voltar">← Voltar à Página Inicial</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌿 Projeto desenvolvido com HTML + CSS | Hospedado no GitHub Pages</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('show');
+    }
+
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href').replace('#', '');
+        const target = document.getElementById(targetId);
+
+        if (target) {
+          target.classList.remove('bounce');
+          void target.offsetWidth;
+          target.classList.add('bounce');
+        }
+      });
+    });
+
+    function checkAnswer(questionName, feedbackId) {
+      const options = document.getElementsByName(questionName);
+      let selected = null;
+      for (const option of options) {
+        if (option.checked) {
+          selected = option.value;
+          break;
+        }
+      }
+      const feedback = document.getElementById(feedbackId);
+      if (selected === null) {
+        feedback.textContent = 'Por favor, escolha uma resposta.';
+        feedback.style.color = 'red';
+        return;
+      }
+      if (selected === "1") {
+        feedback.textContent = 'Resposta correta! 🎉';
+        feedback.style.color = 'green';
+      } else {
+        feedback.textContent = 'Resposta incorreta. Tente novamente! ❌';
+        feedback.style.color = 'red';
+      }
+    }
+  </script>
+</body>
+</html>
