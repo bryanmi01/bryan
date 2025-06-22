@@ -9,5 +9,7 @@ Receitas do Campo: Receitas tradicionais surgidas de origem rural, que utilizamo
 Eventos e Feiras: Eventos que celebram tradições (festas, festas juninas, encontro, etc.) nas regiões rurais próximas a Curitiba; 
 Área Educativa: Infográficos sobre sustentabilidade (criado através de I.A.) e agricultura familiar (criado através de I.A.), e quizzes para a interação com o público-alvo. 
 Tecnologias Utilizadas:
+
 •	HTML e CSS.
+
 •	Hospedagem: GitHub Pages.
