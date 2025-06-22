@@ -334,3 +334,76 @@ nav ul li a {
   margin-bottom: 5px;
 }
 
+.receita {
+  border: 2px solid #7B5E12;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 25px;
+  background-color: #FFF9E5;
+  max-width: 600px;
+}
+
+.receita img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.modo-preparo {
+  background-color: #f0e6c8;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  white-space: pre-line; /* preserva quebras de linha */
+}
+.imagem-educativa {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f1f8e9;
+  border: 2px dashed #aed581;
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+.imagem-educativa h3 {
+  margin-top: 0;
+  color: #4CAF50;
+}
+
+.imagem-educativa p {
+  margin-bottom: 16px;
+  color: #33691e;
+}
+
+.imagem-educativa img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+.agricultura-familiar{
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f1f8e9;
+  border: 2px dashed #aed581;
+  border-radius: 12px;
+  max-width: 600px;
+
+}
+.agricultura-familiar h3{
+  margin-top: 0;
+  color: #4CAF50;
+}
+.agricultura-familiar p{
+  margin-bottom: 16px;
+  color: #33691e;
+}
+.agricultura-familiar img{
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
