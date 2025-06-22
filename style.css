@@ -265,3 +265,72 @@ nav ul li a {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
 }
+.video-container {
+  background: #f0fff4;
+  border-left: 5px solid #66bb6a;
+  padding: 30px;
+  margin: 40px 0;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.video-container h2 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.video-wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+}
+.receita {
+  background-color: #fff8e1;
+  border-left: 4px solid #ffb74d;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.receita h3 {
+  color: #e65100;
+  margin-bottom: 5px;
+}
+.evento {
+  background-color: #fff3e0;
+  border-left: 4px solid #ff9800;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.evento h3 {
+  color: #e65100;
+  margin-bottom: 5px;
+}
+.educativo {
+  background-color: #e3f2fd;
+  border-left: 4px solid #2196f3;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.educativo h3 {
+  color: #0d47a1;
+  margin-bottom: 5px;
+}
+
