@@ -16,18 +16,23 @@ body {
   padding-bottom: 80px;
 }
 
-header {
-  background-color: #4CAF50;
+header, footer {
+  background-image: url('./assets/2bc9b91b-fb91-4cb2-b661-ad9cfdf266d2.jpeg');
+  background-size: cover;
+  background-position: center;
   color: white;
+  text-shadow: 1px 1px 2px black;
   padding: 20px;
-  text-align: center;
-  border-bottom: 5px solid #2e7d32;
 }
 
-header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+/* Garante contraste para texto do footer */
+footer p {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
+
 
 /* Botão do menu responsivo */
 .menu-toggle {
